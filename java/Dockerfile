@@ -1,4 +1,4 @@
-FROM erickbrower/docker-base
+FROM erickbrower/base:ubuntu_13.10
 
 # Fake a fuse install
 RUN apt-get install -y --force-yes libfuse2
