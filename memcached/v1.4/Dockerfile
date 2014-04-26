@@ -1,6 +1,6 @@
 FROM erickbrower/base:ubuntu_13.10
 
-RUN apt-get -qq update                                                          && \
+RUN apt-get -qq update && apt-get install -y libevent-2.0-5                     && \
     wget --quiet http://memcached.googlecode.com/files/memcached-1.4.15.tar.gz  && \
     tar xzf memcached-1.4.15.tar.gz                                             && \
     rm memcached-1.4.15.tar.gz                                                  && \
