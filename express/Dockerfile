@@ -1,12 +1,8 @@
 FROM erickbrower/nodejs
 
-RUN npm config set prefix /opt
-
 RUN npm install -g grunt-cli
 RUN npm install -g bower
 RUN npm install -g express-generator
-
-VOLUME /opt/lib/node_modules
 
 RUN mkdir /opt/app
 
