@@ -1,7 +1,7 @@
 FROM erickbrower/nodejs
 
 RUN apt-get update -qq
-RUN apt-get install postgresql-client
+RUN apt-get install -y postgresql-client
 
 RUN npm install -g grunt-cli
 RUN npm install -g bower
