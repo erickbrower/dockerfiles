@@ -12,5 +12,5 @@ WORKDIR /opt/app
 
 ONBUILD ADD ./package.json /tmp/package.json
 ONBUILD RUN cd /tmp && npm install
-ONBUILD ADD . /opt/app && rm -r /opt/app/node_modules
-ONBUILD RUN cp -a /tmp/node_modules /opt/app/
+ONBUILD ADD . /opt/app
+ONBUILD RUN rm -rf /opt/app/node_modules && cp -a /tmp/node_modules /opt/app/
