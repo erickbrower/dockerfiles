@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y build-essential git wget curl libcurl3 
 ADD configs /opt/configs
 ADD scripts /opt/scripts
 
-RUN sh /opt/scripts/nodejs/install.sh 0.10.28
+RUN sh /opt/scripts/nodejs/install.sh 0.10.29
 
 RUN sh /opt/scripts/ruby-install/install.sh 0.4.3
 RUN sh /opt/scripts/ruby/install.sh
