@@ -1,5 +1,7 @@
 FROM erickbrower/base
 
+RUN . /opt/scripts/mongodb/v2.4/install.sh
+
 RUN npm install -g grunt-cli
 RUN npm install -g bower
 RUN npm install -g express-generator
