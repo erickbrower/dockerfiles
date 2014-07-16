@@ -1,4 +1,4 @@
-FROM erickbrower/base:ubuntu_13.10
+FROM erickbrower/base
 
 RUN apt-get -qq update && apt-get install -y postgresql postgresql-9.1-postgis
 

@@ -1,4 +1,4 @@
-FROM erickbrower/base:ubuntu_13.10
+FROM erickbrower/base
 
 RUN sh /opt/scripts/percona/v5.6/install.sh
 
